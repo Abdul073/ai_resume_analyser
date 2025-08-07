@@ -7,9 +7,14 @@ const Navbar = () => {
       <Link to="/">
         <p className="text-2xl font-bold text-gradient">RESUMIND</p>
       </Link>
-      <Link to="/upload" className="primary-button w-fit">
-        Upload Resume
-      </Link>
+      <div className="flex flex-row gap-4">
+        <Link to="/upload" className="primary-button w-fit">
+          Upload Resume
+        </Link>
+        <Link to="/wipe" className="primary-button w-fit flex flex-col">
+          Wipe
+        </Link>
+      </div>
     </nav>
   );
 };
